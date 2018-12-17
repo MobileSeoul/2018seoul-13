@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_background_color"
+    tools:context=".activity.ArtistProfileActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_menu_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/top_menu_height"
+            android:layout_height="@dimen/top_menu_height"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/artitst_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="아티스트 정보 수정"
+            android:textColor="@color/app_button_color"
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/main_back_round_rect"
+            android:textColor="@color/app_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가수 &amp; 그룹 이름" />
+
+        <EditText
+            android:textColor="@color/app_text2_color"
+            android:id="@+id/singerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/app_text_color"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/main_back_round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="유투브 주소" />
+
+        <EditText
+            android:hint="전체 주소를 입력해 주세요"
+            android:textColor="@color/app_text2_color"
+            android:id="@+id/youtubeAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/app_text_color"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/main_back_round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="인스타 주소" />
+
+        <EditText
+            android:hint="전체 주소를 입력해 주세요"
+            android:textColor="@color/app_text2_color"
+            android:id="@+id/instaAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/app_text_color"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/main_back_round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="페이스북 주소" />
+
+        <EditText
+            android:hint="전체 주소를 입력해 주세요"
+            android:textColor="@color/app_text2_color"
+            android:id="@+id/facebookAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1" />
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/app_text_color"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/main_back_round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="활동 장르 &amp; 주요 활동 위치" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/generSpinner"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/locationSpinner"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/app_text_color"
+            android:background="@drawable/main_back_round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="겔러리에서 이미지 추가하기 (이미지를 클릭해주세요)" />
+
+        <ImageView
+            android:src="@drawable/ic_account_circle"
+            android:id="@+id/profileImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/app_text_color"
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수정하기" />
+</LinearLayout>

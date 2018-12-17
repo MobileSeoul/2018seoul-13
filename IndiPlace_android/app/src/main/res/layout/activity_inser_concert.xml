@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical"
+    tools:context=".activity.InsertConcertActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_menu_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/top_menu_height"
+            android:layout_height="@dimen/top_menu_height"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/artitst_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="콘서트 등록"
+            android:textStyle="bold"
+            android:textColor="@color/app_button_color"
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_back_round_rect" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/app_text_color"
+            android:layout_width="80dp"
+            android:layout_gravity="bottom"
+            android:layout_height="44dp"
+            android:text="검색" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/gressSearchBtn"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/app_text_color"
+            android:layout_width="80dp"
+            android:layout_gravity="bottom"
+            android:layout_height="44dp"
+            android:text="잔디밭" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <EditText
+            android:text="공연 보러 꼭 와주세요!"
+            android:hint="소개글을 써주세요 100자 까지"
+            android:maxLines="2"
+            android:maxLength="100"
+            android:textSize="13dp"
+            android:textColor="@color/app_text_color"
+            android:backgroundTint="@android:color/darker_gray"
+            android:id="@+id/placecontent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seleted_place"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="장소 설정"
+                android:textColor="@color/app_text_color"
+                android:textSize="16dp" />
+
+
+            <Button
+                android:id="@+id/date_selectBtn"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/app_text_color"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="날짜 선택" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/startTimeSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_back_round_rect" />
+
+            <Spinner
+                android:id="@+id/endTimeSpinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_back_round_rect" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/app_text_color"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공연 등록하기" />
+
+</LinearLayout>

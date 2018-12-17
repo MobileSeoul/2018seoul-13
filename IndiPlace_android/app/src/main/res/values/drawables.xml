@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_dance" type="drawable">@mipmap/ic_dance</item>
+    <item name="ic_menu_curriculum" type="drawable">@mipmap/ic_curriculum</item>
+    <item name="ic_menu_microphone" type="drawable">@mipmap/ic_micro</item>
+    <item name="ic_menu_place" type="drawable">@mipmap/ic_place</item>
+    <item name="ic_menu_settings" type="drawable">@mipmap/ic_setting</item>
+    <item name="ic_menu_stage" type="drawable">@mipmap/ic_stage</item>
+</resources>

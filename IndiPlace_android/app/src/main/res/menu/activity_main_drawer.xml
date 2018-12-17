@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_singer"
+            android:icon="@drawable/ic_menu_microphone"
+            android:title="아티스트 검색" />
+        <item
+            android:id="@+id/nav_concert"
+            android:icon="@drawable/ic_menu_stage"
+            android:title="공연 검색" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="설정" />
+    </group>
+
+    <item
+        android:id="@+id/artist_menu"
+        android:title="아티스트">
+        <menu>
+            <item
+                android:id="@+id/nav_artist_insert"
+                android:icon="@drawable/ic_menu_dance"
+                android:title="아티스트 등록" />
+            <item
+                android:id="@+id/nav_artist_profile"
+                android:icon="@drawable/ic_menu_curriculum"
+                android:title="아티스트 프로필 수정" />
+            <item
+                android:id="@+id/nav_insert"
+                android:icon="@drawable/ic_menu_place"
+                android:title="공연등록" />
+        </menu>
+    </item>
+
+</menu>

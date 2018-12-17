@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">인디 플레이스</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="seoul_key">6344745247696b6938315042616e44</string>
+    <string name="kakao_app_key">9cf9a3dd6ef164a49d62bd7a6b31f3a8</string>
+    <string name="default_notification_channel_id">9927</string>
+    <string name="setting">셋팅</string>
+    <string name="no">아니요</string>
+    <string name="yes">네</string>
+    <string name="save_profile">프로필이 저장되었습니다</string>
+
+    <string name="facebook_app_id">2140987226150190</string>
+    <string name="fb_login_protocol_scheme">fb2140987226150190</string>
+    <string name="empty_text">빈칸이 있습니다. 빈칸을 입력해주세요</string>
+    <string name="zero_count">검색 결과가 없습니다</string>
+    <string name="one_more_key_finish">한번더 누르면 종료됩니다</string>
+    <string name="already_star">이미 아티스트입니다</string>
+    <string name="guest_mode">현재 게스트 모드입니다</string>
+    <string name="sucess_comment">코멘트 등록 성공하였습니다</string>
+    <string name="sucess_favorite">즐겨 찾기 추가 성공</string>
+    <string name="already_favorite">이미 등록되어있습니다</string>
+    <string name="remove_favorite">즐겨찾기 삭제 성공</string>
+
+</resources>
